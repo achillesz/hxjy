@@ -1,0 +1,56 @@
+.tcBox {
+    background-color: #FFFFFF;
+    height: 85px;
+    position: absolute;
+    width: 486px;
+    z-index: 1000;
+}
+.tcBox .grade1 {
+    padding-top: 30px;
+    text-align: center;
+}
+.tcBox .grade1 span {
+    color: #454545;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.tcBox .close {
+    background: url("http://img.tool.hexun.com/newhome/images/tc_close.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 10px;
+}
+ .tcBox .btn:link,.tcBox .btn:visited{
+    background: none repeat scroll 0 0 #66B2EC;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+}
+.tcBox .btn:hover {
+    background: none repeat scroll 0 0 #24459A;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ .layer {
+    background: none repeat scroll 0 0 #000000;
+    display: block;
+    float: left;
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}

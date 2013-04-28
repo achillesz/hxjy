@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>个人门户模块规范</title>
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box
+        {
+            width: 556px;
+            height: 425px;
+            background: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div id="FlashContainer"></div>
+        <script type="text/javascript" src="http://flash.tool.hexun.com/js/swfobject.js"></script>
+        <script type="text/javascript">
+            //参数说明:
+            //showFlash20111128("宽","高","swf文件url"	,"页面flash插件对象ID","初始化参数:l=图片数据上传接口url &u=默认已有的图片地址","flash显示区域div容器id")
+            showFlash20111128(556, 425, "http://flash.tool.hexun.com/flash_ma/20130111-JiaYuan/ShapePhotoMain.swf", "ShapePhoto", "l=&u=http://testflash.tool.hexun.com/flash_ma/20130111-JiaYuan//images/pic2.jpg", "FlashContainer");
+
+            //flash上传结果回调
+            function onComplete(_v) {
+                if (_v != "err") {
+                    alert("上传成功");
+                    //页面动作,隐藏层
+                }
+            }
+
+        </script>
+    </div>
+</body>
+</html>

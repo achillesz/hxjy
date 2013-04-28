@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>他的主页</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-1.7.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar fyh">
+    <div class="container">
+        <a href="#" class="navbar_logo">
+            <img src="images/logo.gif" width="73" height="40" /></a>
+        <div class="navbar_pro_name"><a href="#">个人门户</a><!--<img src="images/blank.gif" class="navbar_pro_brand" />--></div>
+        <div class="navbar_search">
+            <form action="">
+            <span class="navbar_search_inp_value">搜索用户</span>
+            <input name="" type="text" class="navbar_search_inp" id="hxjy_navbar_search_inp" />
+            <input name="" type="button" class="navbar_search_btn" />
+            </form>
+        </div>
+        <div class="navbar_menu_list"><a href="#">和讯首页</a></div>
+        <div class="navbar_person">
+            <a href="#">
+                <img src="images/test1.gif" width="22" height="22" align="absmiddle" /></a> <a href="#">平安</a>
+        </div>
+        <div class="navbar_usr_info">
+                <span class="navbar_info_cur">
+                    <em class="navbar_write_blog"></em>
+                    <a id="headPencli" href="#" class="pl20">写博客</a>
+                </span><span class="navbar_info_cur" id="hxjy_navbar_info_news">
+                    <a href="#">消息</a>
+                    <a href="#" class="navbar_info_num vhide"></a>
+                </span>
+                <span class="navbar_info_cur" id="hxjy_navbar_info_inform">
+                    <a href="#">通知</a>
+                    <a href="#" class="navbar_info_num vhide"></a>
+                    <ul class="dropdown-menu w121">
+                    </ul>
+                </span><span class="navbar_info_cur" id="hxjy_navbar_info_account">
+                    <a href="#" class="pr8">账号</a>
+                    <em class="navbar_account"></em>
+                    <ul class="dropdown-menu w48">
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">退出 </a></li>
+                    </ul>
+                </span>
+        </div>
+    </div>
+</div>
+<!--/ Navbar -->
+    <div class="placeholder40"></div>
+    <div class="container">
+        <!-- header -->
+        <div class="profile_header_pic">
+            <img src="images/test3.gif" width="960" height="120" />
+            <a href="javasript:;" class="header_pic_btn" id="hxjy_bannerBtn"></a>
+        </div>
+        <!--/ header -->
+        <!-- 个人信息 -->
+        <div class="profile_info">
+            <div class="user-avatar">
+                <a href="#">
+                    <img src="images/test2.gif" width="120" height="120" /></a>
+            </div>
+            <div class="basic-info">
+                <h2 class="nickname fh"><a href="#" class="a666">MIKA9i_平安 <span class="fb f14 eng">bloor</span></a></h2>
+                <p>女     北京市朝阳区</p>
+                <p>简介： 恋爱第一年看的都是对方的优点，恋爱第二年看的都是对方的缺点，恋爱第三年看的对方的 </p>
+                <div class="user_atten"><a href="#"><strong>529</strong> 关注</a> <a href="#"><strong>11322</strong> 粉丝</a></div>
+            </div>
+            <div class="right pt10 fyh pr10"><a href="#" class="a_btn"><em class="icon_add"></em>关注</a></div>
+        </div>
+        <!--/ 个人信息 -->
+        <div class="subnav">
+            <!-- 关掉的导航 -->
+            <a href="#" class="show_btn" id="hxjy_subnav_show" title="展开导航"></a>
+            <!-- 关掉的导航 -->
+            <!-- 导航 -->
+            <div class="subnav_dipaly clearfix" id="hxjy_subnav_parel">
+                <div class="subnav_icon"><a href="#" class="nav_latest"></a><span class="nav_blog_cur"></span><a href="#" class="nav_wb"></a><a href="#" class="nav_photo"></a><a href="#" class="nav_wd"></a><a href="#" class="nav_email"></a></div>
+                <div class="subnav_right"><a class="set_btn" title="设置"></a><a class="close_btn" id="hxjy_subnav_close" title="关闭"></a></div>
+            </div>
+        </div>
+        <!--/ 导航 -->
+        <!--个人主页-->
+        <div class="home_left">
+            <!-- 大标题 -->
+            <div class="wt_tit1 tit-color1 clearfix">
+                <h2 class="wt_tit1-l fl fh">最新动态</h2>
+            </div>
+            <!-- 分类 -->
+            <div class="hp_nav">
+                <ul class="hp_navList clearfix">
+                    <li class="hp_navlistItem hp_navlistItem-now"><a href="#">全部</a></li>
+                    <li class="hp_navlistItem"><a href="#">博客</a></li>
+                    <li class="hp_navlistItem"><a href="#">相册</a></li>
+                </ul>
+            </div>
+            <!-- 主内容 -->
+            <div id="hxjy_scrollBar">
+                <div class="feed-box">
+                    <div class="feed-wrap clearfix">
+                        <div class="feed-hd">
+                            <span class="feed-time">3分钟前</span> <span class="feed-state">
+                                <img src="images/blank.gif" class="feed-pic-icon" />上传了照片</span>
+                        </div>
+                        <h4 class="feed-title fh"><a href="#">那些年，我?一起追的股票</a></h4>
+                        <div class="feed-img-box">
+                            <a href="#">
+                                <img src="images/temp5.png" class="mr48" /></a> <a href="#">
+                                    <img src="images/temp5.png" class="mr48" /></a> <a href="#">
+                                        <img src="images/temp5.png" class="mr48" /></a> <a href="#">
+                                            <img src="images/temp5.png" /></a>
+                        </div>
+                        <p class="feed-text">缩量十字星，令市场悬疑再起！ - 缩量十字星，令市场悬疑再起！ 当萎缩低迷的成交量、"阴包阳"的K线组合型态、以及短期5日线的失守等等诸多弱市特征汇集于昨日的市场盘面走势时...缩量十字星，令市场悬疑再起！ - 缩量十字星，令市场悬疑再起！ 当萎缩低迷的成交量、"阴包阳"的K线组合型态、以及短期5日线的失守等等诸多弱市特征汇集于昨日的市场盘面走势时...- 缩量十字星，令市场悬疑再起！ 当萎缩低迷的成交量"阴包阳"...</p>
+                        <div class="fr lh20"><a href="#" class="a_9c">继续阅读</a></div>
+                        <div class="clear"></div>
+                        <div class="feed-btm"><a href="#" class="a_9c fr">评论(100)</a><span><strong>标签：</strong><a href="#" class="a_70">财经</a>、<a href="#" class="a_70">股票</a></span></div>
+                        <div class="albumCon-Comment pt10 pl20 mt10 feed_comment " style="display: none;">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <div class="clearfix mt10">
+                                <a class="albumCon-CommBtn1 fl" href="">
+                                    <img src="images/zy_biaoqing.png" alt=""></a>
+                                <input type="button" value="评论" class="btn_pink fr" name="">
+                            </div>
+                            <ul class="albumCon-CommList">
+                                <li class="clearfix">
+                                    <div class="albumCon-cmI fl">
+                                        <a href="#">
+                                            <img src="images/temp6.png" alt=""></a>
+                                    </div>
+                                    <div class="albumCon-cmText fl lh24">
+                                        <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                        孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                                    </div>
+                                    <div class="albumCon-cmTime fr">
+                                        <div class="reply fr"><a href="#" class="a_9c">回复</a></div>
+                                    </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="albumCon-cmI fl">
+                                        <a href="#">
+                                            <img src="images/temp6.png" alt=""></a>
+                                    </div>
+                                    <div class="albumCon-cmText fl lh24">
+                                        <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                        孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                                    </div>
+                                    <div class="albumCon-cmTime fr"></div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="albumCon-cmI fl">
+                                        <a href="#">
+                                            <img src="images/temp6.png" alt=""></a>
+                                    </div>
+                                    <div class="albumCon-cmText fl lh24">
+                                        <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                        孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                                    </div>
+                                    <div class="albumCon-cmTime fr"></div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="albumCon-cmI fl">
+                                        <a href="#">
+                                            <img src="images/temp6.png" alt=""></a>
+                                    </div>
+                                    <div class="albumCon-cmText fl lh24">
+                                        <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                        孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                                    </div>
+                                    <div class="albumCon-cmTime fr"></div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="albumCon-cmI fl">
+                                        <a href="#">
+                                            <img src="images/temp6.png" alt=""></a>
+                                    </div>
+                                    <div class="albumCon-cmText fl lh24">
+                                        <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                        孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                                    </div>
+                                    <div class="albumCon-cmTime fr"></div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="albumCon-cmI fl">
+                                        <a href="#">
+                                            <img src="images/temp6.png" alt=""></a>
+                                    </div>
+                                    <div class="albumCon-cmText fl lh24">
+                                        <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                        孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                                    </div>
+                                    <div class="albumCon-cmTime fr"></div>
+                                </li>
+                            </ul>
+                            <div class="mt25 pb20 clearfix">
+                                <div class="pagination">
+                                    <input type="button" value="上一页" disabled="disabled" class="page_btn_no" name="">
+                                    <span class="cur_page"><a href="#">第5页</a> <em></em></span>
+                                    <input type="button" value="下一页" class="page_btn" name="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-box">
+                    <div class="feed-wrap clearfix">
+                        <div class="feed-hd">
+                            <span class="feed-time">3分钟前</span> <span class="feed-state">
+                                <img src="images/blank.gif" class="feed-pic-icon" />发表了文章</span>
+                        </div>
+                        <h4 class="feed-title fh"><a href="#">那些年，我?一起追的股票</a></h4>
+                        <p class="feed-text">缩量十字星，令市场悬疑再起！ - 缩量十字星，令市场悬疑再起！ 当萎缩低迷的成交量、"阴包阳"的K线组合型态、以及短期5日线的失守等等诸多弱市特征汇集于昨日的市场盘面走势时...缩量十字星，令市场悬疑再起！ - 缩量十字星，令市场悬疑再起！ 当萎缩低迷的成交量、"阴包阳"的K线组合型态、以及短期5日线的失守等等诸多弱市特征汇集于昨日的市场盘面走势时...- 缩量十字星，令市场悬疑再起！ 当萎缩低迷的成交量"阴包阳"...</p>
+                        <div class="fr lh20"><a href="#" class="a_9c">继续阅读</a></div>
+                        <div class="clear"></div>
+                        <div class="feed-btm"><a href="#" class="a_9c fr">评论(100)</a><span><strong>标签：</strong><a href="#" class="a_70">财经</a>、<a href="#" class="a_70">股票</a></span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 查看更多 -->
+            <div class="view_more mb60 f14" id="hxjy_scrollBar_manual"><span class="clearfix"><em></em>查看更多</span></div>
+        </div>
+        <div class="home_right">
+            <h2 class="home_right_title"><span></span>全球股指</h2>
+            <div class="home_right_gz pb30 clearfix">
+                <img src="images/test1.jpg" />
+            </div>
+            <h2 class="home_right_title"><span></span>最近来访</h2>
+            <ul class="ul_img_list pb30 clearfix">
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+                <li><a href="#" title="XXX">
+                    <img src="images/temp3.png" width="50" height="50" /></a></li>
+            </ul>
+            <h2 class="home_right_title"><span></span>和讯新闻</h2>
+            <ul class="ul_text_list pb30 clearfix">
+                <li><span>· </span><a href="#" class="a_black_un">三菱东京日联银行正常营业 正常营业 正</a></li>
+                <li><span>· </span><a href="#" class="a_black_un">三菱东京日联银行正常营业 正常营业 正</a></li>
+                <li><span>· </span><a href="#" class="a_black_un">三菱东京日联银行正常营业 正常营业 正</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--/个人主页-->
+    <div class="footer" id="hxjy_footer">
+        <div class="container"><span class="right"><a href="http://www.hexun.com">返回和讯首页</a> </span>Copyright<span style="font-family: Tahoma">&copy;</span><strong>和讯网 和讯信息科技有限公司</strong> All Rights Reserved 版权所有 复制必究</div>
+    </div>
+    <div></div>
+    <script type="text/javascript" src="Scripts/hexun.home.common.js?123"></script>
+    <script type="text/javascript" src="Scripts/hexun.home.other.js?123"></script>
+    <script type="text/javascript">
+
+
+
+        $(function () {
+            // 个人门户→固定导航条
+            hexun.home.navBar().init();
+
+            // 个人门户→导航条效果
+            hexun.home.banner().init();
+
+            // 个人门户→自定义导航条图片
+            hexun.home.bannerPic().init();
+
+            // 个人门户→他的主页
+            hexun.home.homepage().init({ state: "ta" });
+
+            hexun.home.upGrade = (function(){
+                var defaults = {
+                    txt: "",
+                    html: "",
+                    addClass: "",
+                    callback: $.noop,
+                    isBg: true,
+                    time:1000
+                }
+                function extendDeep(parent,child){
+                    var i,
+                            toStr = Object.prototype.toString,
+                            astr = "[object Array]";
+                    child = child || {};
+                    for(i in parent){
+                        if(parent.hasOwnProperty(i)){
+                            if(typeof parent[i] === "object"){
+                                child[i] = (toStr.call(parent[i]) === astr) ? [] : {};
+                                extendDeep(parent[i],child[i]);
+                            } else{
+                                child[i] = parent[i];
+                            }
+                        }
+                    }
+                    return child;
+                }
+                var page = document.body,oTc;
+
+                var initialize = function () {
+                    setTimeout(doTc,defaults.time)
+                };
+                function doTc(){
+                    oTc = {
+                        ele:null,
+                        layer:null,
+                        drawPanel: function(){
+                            var otc,aHTML,ret = [];
+                            otc = document.createElement('div');
+                            otc.className = "tcBox";
+                            ret.push('<span class="close" id="close"></span>');
+                            ret.push('<div class="grade1 clearfix">');
+                            ret.push('<div class="fl ml20 grade1L"><span>');
+                            ret.push(defaults.txt);
+                            ret.push('</span><br>');
+                            ret.push(' <a href="');
+                            ret.push(defaults.linkHref);
+                            ret.push('">');
+                            ret.push(defaults.linkText);
+                            ret.push('</a></div><div class="fl ml10 grade1R">');
+                            ret.push('<a id="btn_grade" href="');
+                            ret.push(defaults.linkHref1);
+                            ret.push('" class="btnUp">');
+                            ret.push(defaults.btnTxt);
+                            ret.push('</a><Br><span>');
+                            ret.push(defaults.txtWar);
+                            ret.push('</span></div></div></div>');
+                            aHTML = ret.join('');
+                            otc.innerHTML = aHTML;
+
+                            document.body.appendChild(otc);
+                            this.ele = otc;
+
+                            this.onResize();
+                            this.bindEvent();
+                        },
+                        bindEvent:function(){
+                            var me =  this;
+                            var oClose = document.getElementById('close'),
+                                    oBtn = document.getElementById('btn_grade');
+                            oClose.onclick = function(){
+                                me.closeAlert();
+                            };
+                            oBtn.onclick = function(){
+                                defaults.callback();
+                                me.closeAlert();
+                            };
+
+                        },
+                        onResize: function () {
+                            var ele = this.ele;
+                            ele.style.left = (parseInt(document.documentElement.clientWidth || document.body.clientWidth)) / 2 + (document.documentElement.scrollLeft || document.body.scrollLeft) - ele.offsetWidth / 2 + "px";
+                            ele.style.top = 40 + 'px';
+                        },
+                        closeAlert: function () {
+                            if (defaults.isBg) {
+                                document.body.removeChild(this.layer); //删除节点
+                            }
+                            document.body.removeChild(this.ele); //删除节点
+                            return false;
+                        }
+                    };
+                    oTc.drawPanel();
+
+                }
+
+                return {
+                    init:function(options){
+                        extendDeep(options,defaults);
+                        initialize();
+                    }
+
+                };
+            })();
+
+            hexun.home.upGrade.init({
+                txt:"和讯新版个人门户升级了！新版功能全新上线！",
+                linkText:'查看新版个人门户功能和特色',
+                linkHref:'#',
+                linkHref1:'#',
+                btnTxt:'一键升级',
+                txtWar:'升级后不可恢复旧版',
+                callback:function(){
+                    alert("升级程序");
+                }
+            });
+
+        });
+
+    </script>
+</body>
+</html>

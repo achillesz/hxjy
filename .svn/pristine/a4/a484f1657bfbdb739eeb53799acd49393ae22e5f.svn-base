@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" >
+<title>和讯-注册</title>
+    <base href="http://reg.hexun.com">
+<link rel="Stylesheet" type="text/css" href="css/style.css" />
+    <link href="css/reg_xfh.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/reg2009.js"></script>
+<script type="text/javascript" language="javascript" src="lib/jquery.js"></script>
+ <script type="text/javascript" language="javascript" src="js/jqueryscript2011.js"></script>
+<script type="text/javascript" language="javascript" src="lib/jquery.tablesorter.js"></script>
+
+ <script type="text/javascript">
+ var global_username_flag =false;
+    var global_email_flag = false;
+    function isEmail(theStr)
+   {	
+	   if (!/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(theStr)) 
+	        return false;
+	   return true;
+	}
+   	function toppage()
+	{
+		//设置iframe中Height的值为其中页面的高度
+		if (self.location!=top.location)
+		{
+			parent.document.getElementById("ifrm").height = document.body.scrollHeight;
+		}		
+	}
+    </script>
+</head>
+
+<body onload="validateInfo()"  >
+<form id="Form1" method="post" action="regname.aspx" >
+
+<div class="warp">
+<!--页头 b-->
+<div class="header">
+<div class="box">
+
+<div class="bg">
+<div class="logo"><a href="http://www.hexun.com" target="_blank" title="和讯logo"><img src="img/logo.png" /></a>注册</div>
+<span>中国最大的财经网站</span>
+</div>
+</div>
+<div class="right"></div>
+</div>
+<!--页头 e-->
+
+<!--内容 b-->
+<div class="content">
+<div class="title"><span>用户注册</span>
+<ul>
+<li class="ing"><em>1</em>填写信息</li>
+
+<li><em>2</em>邮件确认</li>
+<li><em>3</em>注册成功</li>
+</ul>
+</div>
+<div class="mainBox">
+
+<div class="main lnr reg">
+
+<div class="left">
+<div id="entry">
+<dl>
+<dt>用户名：</dt>
+
+<dd><input type="text" id="TextBoxUserName" size="22" name="TextBoxUserName" class="inp1" onblur="UserNameOnBlurNew(0);"/>
+</dd>
+<dd class="point" id="UserName_div" ><span>您帐户的用户名，3-12个字符，第一位不 能是数字</span></dd>
+</dl>
+<dl>
+<dt>登录邮箱：</dt>
+<dd><input type="text"  id="TextBoxEMail" size="22" name="TextBoxEMail" onblur="EmailOnBlurNew()"  /></dd>
+<dd class="point" id="Mail_div"></dd>
+</dl>
+<dl>
+<dt>设定密码：</dt>
+<dd><input type="password" size="12"  name="TextBoxPassword" id="TextBoxPassword" onfocus="pwdonfocus(this)" onblur="pwdonblur(this)" onkeyup="pwdonkeyup(this)"/></dd>
+<p id="passwordClew" style="color: #6b6b6b; font-size: 12px; display:none"></p>
+<dd class="point" id="Password_div"></dd>
+</dl>
+
+<dl>
+<dt>再次输入密码：</dt>
+<dd><input type="password" name="TextBoxPasswordAff" class="inp1" size="12" id="TextBoxPasswordAff" onblur="checkConPwd()"/></dd>
+<dd class="point" id="ConPassword_div"></dd>
+</dl>
+    <dl style="height:60px;">
+        <dt>&nbsp;</dt>
+        <dd class="verify" style="width:260px;"><img id="c_codeImg" style="width:250px;" alt="验证码加载中.." src="http://reg.hexun.com/vcodepic.aspx?userid=91326700"></dd>
+        <dd class="point"><a href="javascript:refreshC_code();">看不清，换一张？</a></dd>
+    </dl>
+<dl> 
+<dt>验证码：</dt>
+<dd><input type="text" id="TextGpic" size="8" name="TextGpic" /></dd>
+</dl>
+<script type="text/javascript">
+function refreshC_code()
+{
+	var pp= Math.round((Math.random()) * 100000000);
+	document.getElementById("c_codeImg").src = "/vcodepic.aspx?userid="+pp;
+}
+refreshC_code();
+</script>
+    
+</div>
+<div class="rem"><input type="checkbox" id="rss" name="rss" value="1" /> 邮件订阅<a href="http://cfsd.hexun.com/" target="_blank">《财富速递》</a></div>
+
+<div class="subm"><input class="textInp" type="button" value="确认并同意以下内容" onclick="javascript:butSubmit();"/>
+<a href="http://reg.hexun.com/html/fetk.htm" target="_blank">《和讯服务条款》</a> <a href="http://cfsd.hexun.com/ysaq.html" target="_blank">《版权声明》</a>
+</div>
+</div>
+<div class="right">
+<div class="goReg">
+我已经有和讯帐户了：<br/>
+<a href="Login.aspx?fromhost=reg.hexun.com&hiddenReferrer=http://www.hexun.com,HX_WEB&gourl=http://t.hexun.com" target="_blank">立即登录</a>
+</div>
+<div class="msn">
+<p class="tit">你也可以用以下的帐号登录：</p>
+<br />
+ <p class="pic">
+ <img src="img/sina_ico.gif" /><a href="bindsina.aspx?gourl=aHR0cDovL3QuaGV4dW4uY29t&channel=&fromhost=www.hexun.com,HX_WEB">新浪微博登录<span>&gt;</span></a>
+ </p>
+  <p class="pic">
+ <img src="img/qq_ico.gif" /><a href="bindqq.aspx?gourl=aHR0cDovL3QuaGV4dW4uY29t&channel=&fromhost=www.hexun.com,HX_WEB" >QQ帐号登录<span>&gt;</span></a>
+ </p>
+  <p class="pic">
+ <img src="img/qweibo_ico.gif" /><a href="bindtencent.aspx?gourl=aHR0cDovL3QuaGV4dW4uY29t&channel=&fromhost=www.hexun.com,HX_WEB" >腾讯微博登录<span>&gt;</span></a>
+ </p>
+<p class="pic">
+ <img src="img/msn_ico.gif" /><a href="bindmsn.aspx?gourl=aHR0cDovL3QuaGV4dW4uY29t&channel=&fromhost=www.hexun.com,HX_WEB">MSN帐号登录<span>&gt;</span></a>
+ </p>
+ <p class="pic">
+ <img src="img/baidu_ico.gif" /><a href="bindbaidu.aspx?gourl=aHR0cDovL3QuaGV4dW4uY29t&channel=&fromhost=www.hexun.com,HX_WEB">用百度帐号登录<span>&gt;</span></a>
+ </p>
+<p>
+可以免去记忆多个帐号的麻烦<br/>
+可以免去注册时的邮箱验证<br/>
+可以方便的将这里的精彩内容转发<br/>
+……
+</p>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+<!--内容 e-->
+
+</div>
+<!--页脚 b-->
+<div class="footer">
+copyright&copy;和讯网
+</div>
+<!--页脚 e-->
+
+
+ <input type="hidden" name="submitsign" id="submitsign" value="0" />
+<input type="hidden" name="fromhost" id="fromhost" value="www.hexun.com,HX_WEB" />
+<input type="hidden" name="backurl" id="backurl" value="" />
+<input type="hidden" name="RecomUserID" id="RecomUserID" value="" /> 
+<input type="hidden" name="gourl" id="gourl" value="" /> 
+<input type="hidden" name="hiddenReferrer" id="hiddenReferrer" value='http://reg.hexun.com/regname.aspx?gourl=http://www.hexun.com/,http://www.hexun.com/' />                         
+
+<input type="hidden" name="RecommendUserid" id="RecommendUserid" value='' />                         
+<input type="hidden" name="RecommendCode" id="RecommendCode" value='' />                         
+<input type="hidden" name="ActionID" id="ActionID" value='-1' /> 
+<input type="hidden" name="IsWeiBo" id="IsWeiBo" value='0' />
+<input type="hidden" name="watchid" id="watchid" value='' />      
+<input type="hidden" name="callback" id="Hidden1" value="" />  
+<input type="hidden" name="channelcode" id="channelcode" value="" />  
+
+                        
+</form>
+            
+<script language="JavaScript">
+    //判断输入密码的类型 
+function CharMode(iN)
+{ 
+    if (iN>=48 && iN <=57) //数字 
+    return 1; 
+    if (iN>=65 && iN <=90) //大写 
+    return 2; 
+    if (iN>=97 && iN <=122) //小写 
+    return 4; 
+    else 
+    return 8;  
+} 
+//bitTotal函数 
+//计算密码模式 
+function bitTotal(num)
+{ 
+    modes=0; 
+    for (i=0;i<4;i++){ 
+    if (num & 1) modes++; 
+    num>>>=1; 
+} 
+return modes; 
+} 
+//返回强度级别 
+function checkStrong(sPW)
+{ 
+    if (sPW.length<=3) 
+        return 0; //密码太短 
+    Modes=0; 
+    for (i=0;i<sPW.length;i++)
+    { 
+        //密码模式 
+        Modes|=CharMode(sPW.charCodeAt(i)); 
+    } 
+    return bitTotal(Modes); 
+} 
+//显示颜色 
+function pwStrength(pwd)
+{ //alert(pwd);
+//            if (pwd!=null||pwd!='')
+//            { 
+//                S_level=checkStrong(pwd); 
+//            
+//	            var objdiv = document.getElementById("passwordClew");
+//                switch(S_level) 
+//                { 
+//                    case 0:         
+//                    case 1: 
+//                    objdiv.innerHTML = "强度：低";
+//                    objdiv.className = "password rankLow";
+//                    break; 
+//                    case 2: 
+//                    objdiv.innerHTML = "强度：中";
+//                    objdiv.className = "password rankMiddle";
+//                    break; 
+//                    default: 
+//                    {
+//                        objdiv.innerHTML = "强度：高";
+//                        objdiv.className = "password rankHigh";
+//                    }
+//                } 
+//                objdiv.style.display = (S_level?"block":"none");
+//            } 
+    return; 
+} 
+
+<!--
+function submitform()
+{
+    //debugger;
+	if(!checkUN())return false;
+	if(!checkPwd())return false;
+	if(!checkConPwd())return false;
+	if(!checkMail())return false;
+
+	if (document.getElementById("TextGpic").value == "")			
+	{
+		window.alert("未填写验证码！");
+		document.getElementById("TextGpic").focus();				
+		return false;						
+	}
+  return true;
+}
+function checkStr(){ 
+	var r, re;         
+	var s = Form1.TextBoxUserName.value;
+	re = /^\\w+$/;      
+	r = s.test(re);   
+	return(r); //Return array containing all four
+}
+
+function cnLength(Str) {
+	var escStr = escape(Str);
+	var numI = 0;
+	var escStrlen = escStr.length;
+	for (i = 0;  i < escStrlen;  i++) 
+	if(escStr.charAt(i) == '%') 
+	if(escStr.charAt(++i) == 'u')  numI ++;
+	return Str.length+numI;
+}
+function checkPwd()
+{
+	var strError = "<span class='warning'>";
+	var reg=/^(([a-z]+[0-9]+)|([0-9]+[a-z]+))[a-z0-9]*$/i; 
+	var spReg = /^[A-Za-z0-9]+$/;
+	document.getElementById("Password_div").style.display="block";
+	var txtPassword = document.getElementById("TextBoxPassword").value;
+	txtPassword = txtPassword.replace( /[ ]/g , "");
+	
+	if (txtPassword == "")			
+	{
+		document.getElementById("Password_div").innerHTML = strError + "未填写密码！</span>";
+		//Form1.TextBoxPassword.focus();				
+		return false;						
+	}
+	if (txtPassword.length > 20)			
+	{
+		document.getElementById("Password_div").innerHTML = strError + "密码太长！</span>";	
+		//Form1.TextBoxPassword.focus();			
+		return false;						
+	}
+	
+	if (txtPassword.length < 6)			
+	{
+		document.getElementById("Password_div").innerHTML = strError + "密码太短！</span>";	
+		//Form1.TextBoxPassword.focus();			
+		return false;						
+	}
+	
+	if(spReg.test(txtPassword)){
+		if(!reg.test(txtPassword)){
+            document.getElementById("Password_div").innerHTML = strError + "密码必须是数字和字母组合！</span>";	
+            return false;	
+        }	
+	}   							
+		
+	document.getElementById("Password_div").innerHTML = "<span class='ok'/>";
+	pwStrength(document.getElementById("TextBoxPassword").value);
+	return true;
+}
+function checkConPwd()
+{
+	var strError = "<span class='warning'>";
+	if (document.getElementById("TextBoxPasswordAff").value == "")			
+	{
+		document.getElementById("ConPassword_div").innerHTML = strError + "未填写密码确认！</span>";	
+		//Form1.TextBoxPasswordAff.focus();			
+		return false;						
+	}
+	if (document.getElementById("TextBoxPasswordAff").value != document.getElementById("TextBoxPassword").value)			
+	{
+		document.getElementById("ConPassword_div").innerHTML = strError + "密码确认与密码不符！</span>";
+		//Form1.TextBoxPasswordAff.focus();				
+		return false;						
+	}
+	if (document.getElementById("TextBoxUserName").value == document.getElementById("TextBoxPassword").value)			
+	{
+		document.getElementById("ConPassword_div").innerHTML = strError + "密码不能与用户名重复！</span>";
+		//Form1.TextBoxPasswordAff.focus();				
+		return false;						
+	}
+	document.getElementById("ConPassword_div").innerHTML = "<span class='ok'/>";
+	return true;
+}
+function checkMail()
+{
+	var strError = "<span class='warning'>";
+	if (document.getElementById("TextBoxEMail").value == "")			
+	{
+		document.getElementById("Mail_div").innerHTML = strError + "未填写邮件地址！</span>";
+	
+		return false;						
+	}
+	if (!isEmail(document.getElementById("TextBoxEMail").value))
+	{
+		document.getElementById("Mail_div").innerHTML = strError + "邮件地址有误！</span>";				
+		return false;
+	}
+	//document.getElementById("Mail_div").innerHTML = "<span class='ok'/>";
+	return document.getElementById("Mail_div").result;
+}
+//2009/07/09注册升级 邮件确认这个不要了
+function checkConfirmEmail()
+{
+	if (document.getElementById("confirmEmail").value == "")			
+	{
+		document.getElementById("ConfirmMail_div").innerHTML = "未填写邮件确认地址！";
+		//Form1.TextBoxEMail.focus();				
+		return false;						
+	}
+	if (document.getElementById("confirmEmail").value!=document.getElementById("TextBoxEMail").value)
+	{
+		document.getElementById("ConfirmMail_div").innerHTML = "和上面输入的邮箱不相符合！";
+		//Form1.TextBoxEMail.focus();					
+		return false;
+	}
+	if(document.getElementById('Mail_div').innerHTML != "不能用已经注册和开通的邮箱注册!")
+	{
+	   document.getElementById("ConfirmMail_div").innerHTML = "<font color='green'>√</font>";
+	}
+	else
+	{
+	   document.getElementById("ConfirmMail_div").innerHTML = "请换一个邮箱注册吧！";
+	}
+	
+	return true;
+	
+}
+
+function fucCheckLength(strTemp)
+{
+     var i,sum;
+     sum=0;
+     for(i=0;i<strTemp.length;i++)
+     {
+        if ((strTemp.charCodeAt(i)>=0) && (strTemp.charCodeAt(i)<=255))
+            sum=sum+1;
+        else
+            sum=sum+2;
+     }
+     return sum;
+}
+
+function checkUN()
+{	
+
+    //6.12修改
+	var strError = "<span class='warning'>";
+    if( fucCheckLength( document.getElementById("TextBoxUserName").value) > 12 )
+    {
+		document.getElementById("UserName_div").innerHTML = strError + "我们目前用户名注册限制在12个字符内，且不能更改，您一定要慎重哦</span>";
+		return false;
+	}	 
+	toptwo = document.getElementById("TextBoxUserName").value.substring(0,2).toLowerCase();	
+	if (toptwo == "gd")
+	{
+		document.getElementById("UserName_div").innerHTML = strError + "请不要以'GD'开头的用户名！</span>";
+		//Form1.TextBoxUserName.focus();
+		return false;
+	}	
+	//6.12修改
+	
+	if(document.getElementById("TextBoxUserName").value.indexOf("和讯")>=0)
+	{
+		document.getElementById("UserName_div").innerHTML = strError + "此用户名已经存在</span>";
+		return false;
+	}		
+	
+	if (document.getElementById("TextBoxUserName").value == "")			
+	{
+		document.getElementById("UserName_div").innerHTML = strError + "未填写用户名！</span>";	
+		return false;						
+	}
+	if (cnLength(document.getElementById("TextBoxUserName").value) < 3)			
+	{
+		document.getElementById("UserName_div").innerHTML = strError + "用户名太短！</span>";
+		return false;						
+	}
+   return document.getElementById("UserName_div").result;
+}
+function butSubmit()
+{
+    var objfrom = document.getElementById("Form1");
+    if(objfrom && submitform())
+    {
+        document.getElementById("submitsign").value=1;
+       // alert(document.getElementById("submitsign").value);    
+        objfrom.submit();
+    }
+}
+function validateInfo()
+{
+    if (document.getElementById("TextBoxUserName").value != "")	
+    {
+        UserNameOnBlurNew(0);
+    }
+    if(document.getElementById("TextBoxPassword").value != "")
+    {
+        checkPwd();
+    }
+    if (document.getElementById("TextBoxEMail").value != "")
+    {
+        EmailOnBlurNew();
+    }
+}
+function pwdonfocus(obj){f_hideLayer("passwordClew");f_hideLayer("Password_div");obj.select();if(obj.value.length!=0){pwStrength(obj.value);};}
+function pwdonblur(obj){f_hideLayer("Password_div");if(obj.value.length==0){return;};checkPwd();f_hideLayer("passwordClew");};
+function pwdonkeydown(){if(document.getElementById("TextBoxPasswordAff").value.length!=0&&document.getElementById("TextBoxPassword").value.length==0){document.getElementById("TextBoxPasswordAff").value="";};};
+function pwdonkeyup(obj){pwStrength(obj.value)};
+
+function f_hideLayer(ld_LayerId)
+{
+    document.getElementById(ld_LayerId).style.display="none";
+};
+//-->
+</script>
+   
+</body>
+</html>

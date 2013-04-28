@@ -1,0 +1,119 @@
+@charset "gb2312";
+
+/*sprits*/
+.st_openId_inter span,.st_openId_inter a em,.sc-messV,.errorWarningIco,.sc-accountNav li span,.sc-accountsafeGradeImg,.sc-accountsafeSet,.sc-mobileNav,.sc-mobileOk em{ background-image:url("../images/zy_icqs.png");}
+/*setcenter openId*/
+.st_tit{ font-size:14px; color:#454545;}
+.st_openId_inter{ padding-top:20px;}
+.st_openId_inter span{ width:27px; height:23px; background-repeat:no-repeat; margin-right:10px; overflow:hidden;}
+.st_openId_sina{ background-position:left -284px;}
+.st_openId_qq{ background-position:left -308px;}
+.st_openId_msn{ background-position:left -332px;}
+.st_openId_baidu{ background-position:left -356px;}
+.st_openId_Tent{ background-position:left -380px;}
+.st_openId_inter a{ float:left; display:inline; height:18px; line-height:18px; width:105px; font-size:12px; background-color:#45a1e8; color:#fff; margin-top:3px;}
+.st_openId_inter a:hover{ text-decoration:none;}
+.st_openId_inter a em{ float:left; display:inline; height:18px;width:11px; overflow:hidden; margin-right:9px; background-position:left -403px;}
+/*set center domain*/
+.sc-domainNor{ line-height:25px; height:25px;}
+.sc-domainLabel1{ vertical-align:middle;}
+.sc-domainInput1{ padding-left:10px; width:211px; border:1px solid #E2E2E2; padding-top:3px; padding-bottom:3px; vertical-align:middle;}
+.sc-domainFocus .sc-domainInput1{    background-color: #EEF8FF; border: 1px solid #45A1E8;}
+.pl117{ padding-left:112px;}
+.sc-domainNor span{ height:23px; line-height:23px;}
+.sc-domainFocus span{ background-color: #EEF8FF; 	color: #454545;padding:0 15px;}
+.sc-domainError span{background-color: #FFE5E5;	color: #454545; padding:0 15px;}
+.sc-domainSucces span{ display:none;}
+.sc-domainSucces div{ display:block;}
+/*set center mess*/
+.sc-messLabel1{ height:25px; line-height:25px; width:70px; text-align:right; margin-right:5px;}
+.sc-messInputBox{ line-height:25px;}
+.sc-messInput1{ border:1px solid #e2e2e2; padding:3px 0 3px 10px; width:211px; line-height:17px; height:17px; vertical-align:middle;}
+.sc-messStar{ margin-left:10px; color:#fb626e; line-height:25px;}
+.sc-messLabel2{}
+.sc-messLabel2 input{ vertical-align:-2px;}
+.sc-messTextarea{ width:302px; height:72px; border:1px solid #e2e2e2; color:#b9b9b9; font-size:12px; line-height:20px;}
+.sc-messTit{  font-weight:normal;}
+.sc-messTit span{ }
+.pl75{ padding-left:75px;}
+.inputFocus .sc-messInput1{  background-color: #EEF8FF; border: 1px solid #45A1E8;}
+.sc-messV{width:17px; height:14px; overflow:hidden; background-position:left -422px; margin-top:3px; margin-right:10px;}
+/*set center mess tc*/
+.sc-messTClabel1{ width:122px; text-align:right; height:25px; line-height:25px; margin-right:8px; }
+.sc-messTCinput1{width:211px; padding:3px 0 3px 10px; height:17px; line-height:17px; vertical-align:middle; border:1px solid #e2e2e2;}
+.sc-messTCinput1Focus .sc-messTCinput1{    background-color: #EEF8FF; border: 1px solid #45A1E8;}
+.sc-messTCinput1Success .rightWarning{ display:block;}
+.rightWarning strong{ float:left; display:inline; margin-left:10px; margin-top:6px;}
+.errorWarning{ border:1px solid #f54b58; height:23px; line-height:23px; background-color:#ffe5e5; margin-left:10px;min-width:174px;_width:174px;}
+.errorWarningIco{  background-position: left -107px; display: block;float: left;height: 13px;width: 13px; margin:5px 10px 0; }
+.sc-messTCinput1Error .errorWarning{ display:block;}
+.sc-messTCtextarea{ width:302px; height:72px; line-height:20px; font-size:12px; border:1px solid #e2e2e2;}
+.sc-messTCtextareaFocus .sc-messTCtextarea{ border: 1px solid #45A1E8;}
+/*setcenter avator*/
+.sc-avatarL{ width:134px; height:134px; margin-left:10px;}
+.sc-avatarLImg{ width:120px; height:120px; padding:7px; background-color:#f4f4f6; overflow:hidden;}
+.sc-avatarLText{ line-height:30px; text-align:center; color:#747474;}
+.sc-PrivacyArea{ padding-left:67px;}
+.sc-PrivacyArea h4{ font-weight:normal; font-size:12px;}
+.sc-PrivacyArea h4 span{}
+.sc-PrivacyArea label{ float:left; display:inline; padding-top:10px; padding-left:62px;}
+.sc-PrivacyArea label input{ vertical-align:-2px; margin-right:8px;}
+.sc-PrivacyAreaTit{ display:inline-block; width:52px; text-align:right;}
+/*setcenter account*/
+.sc-accountNav{ border-top:2px solid #66b2ec; width:653px;}
+.sc-accountNav li{ float:left; display:inline; position:relative; width:129px; margin-right:2px; text-align:center; height:32px; line-height:32px; background-color:#f1f1f1;}
+.sc-accountNav .sc-accounlistLast{ margin-right:0;}
+.sc-account{ padding-left:50px;}
+.sc-accountNav li a{ display:block;}
+.sc-accountNav li a:Link,.sc-accountNav li a:visited{ color:#454545;}
+.sc-accountNav li a:hover{ text-decoration:none;}
+.sc-accountNav .sc-accountOn{ background-color:#66b2ec; color:#fff;}
+.sc-accountNav .sc-accountOn a:link,.sc-accountNav .sc-accountOn a:visited{ color:#fff;}
+.sc-accountNav .sc-accountOn a:hover{ text-decoration:none;}
+.sc-accountNav li span{ display:none;position:absolute; width:15px; height:8px; overflow:hidden; background-position:0 -437px;left:50%;bottom:-8px; margin-left:-7px;}
+.sc-accountNav .sc-accountOn span{ display:block;}
+/*setcenter account safewarning*/
+.sc-accountSafewT{ padding-top:22px; padding-left:40px; width:576px;}
+.sc-accountSafewLabel{ float:left; display:inline; padding-left:40px; padding-bottom:15px;}
+.sc-accountSafewLabel input{ vertical-align:-2px;}
+.sc-accountSafewLabel span{ margin-left:19px;}
+.sc-accountSafewTit{ font-weight:normal; padding:25px 0 10px 40px;}
+.sc-accountSafewSave{ padding-left:40px;}
+/*setcenter account safe*/
+.sc-accountsafeT1{ color:#4e4e50; padding-left:40px; padding-top:17px; line-height:22px;}
+.sc-accountsafeGrade{ padding-left:40px; padding-top:23px;}
+.sc-accountsafeGradeImg{ width:191px; height:8px; overflow:hidden; background-position:left -446px; margin-top:4px; margin-left:12px;}
+.sc-accountsafeGradeMid .sc-accountsafeGradeImg{ background-position:left -455px;}
+.sc-accountsafeGradeHigh .sc-accountsafeGradeImg{ background-position:left -464px;}
+.sc-accountsafeSet{ width:25px; height:19px; overflow:hidden; background-position:left -473px;}
+.sc-accountsafeSetBox{ width:429px;}
+.sc-accountsafeSetBox1 .sc-accountsafeSet{ background-position:left -493px;}
+.sc-accountsafeSetBox .sc-accountsafeX1{ display:block;}
+.sc-accountsafeSetBox1 .sc-accountsafeX2{ display:block;}
+.sc-accountsafeSetBox1 .sc-accountsafeX1{ display:none;}
+/*vRight vError*/
+.vRight .rightWarning{ display:block;}
+.vError .errorWarning{ display:block;}
+.inputFocus .sc-messInput1{  background-color: #EEF8FF; border: 1px solid #45A1E8;}
+.vError  .sc-messInput1{border:1px solid #F54B58; background-color:#fff;}
+.inputFocus textarea{ border: 1px solid #45A1E8;}
+/*seccenter account mobile*/
+.sc-mobileNav{ text-align:center; width:482px; background-position:left -513px; margin:27px 0 0 40px;}
+.sc-mobileNav li{ float:left; display:inline; height:24px; line-height:24px;}
+.sc-mobileNavFir{ width:165px;}
+.sc-mobileNavSec{ width:185px;}
+.sc-mobileNavThr{ width:132px;}
+.sc-mobileNav2{ background-position:left -538px;}
+.sc-mobileNav3{ background-position:left -563px;}
+.sc-mobileNavNow{ color:#fff;}
+.sc-accountMobileRead{ padding-left:105px;}
+.sc-accountMobileRead input{ vertical-align:-2px;}
+.sc-accountMobileRead  span{ margin-left:10px;}
+.sc-accountMobileBtn{ padding-left:133px;}
+.sc-mobileBox{ width:343px; border:1px solid #e2e2e2;  background-color:#f5f5f7;padding:13px 0 14px 63px; margin-left:80px;}
+.sc-mobileOk{ margin-left:132px; padding:24px 0 20px 39px;border:1px solid #e2e2e2;  background-color:#f5f5f7; width:201px; font-size:16px; font-weight:bold; line-height:30px;}
+.sc-mobileOk em{ width:36px; height:27px; float:left; display:inline; background-position:left -588px; overflow:hidden;}
+/*setcenter account email*/
+.sc-accountEmailVer{border:1px solid #e2e2e2;  background-color:#f5f5f7; padding:10px; width:380px; margin-left:90px; line-height:22px;}
+.sc-mobileOkTips a:link,.sc-mobileOkTips a:visited{ font-size:12px; font-weight:normal;}
+.sc-accountEmail .sc-messLabel1{ width:84px;}

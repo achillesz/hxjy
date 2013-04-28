@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>个人门户模块规范</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-1.7.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar fyh">
+        <div class="container">
+            <a href="#" class="navbar_logo">
+                <img src="images/logo.gif" width="73" height="40" /></a>
+            <div class="navbar_pro_name">个人门户<img src="images/blank.gif" class="navbar_pro_brand" /></div>
+            <div class="navbar_search">
+                <span class="navbar_search_inp_value">搜索用户</span>
+                <input name="" type="text" class="navbar_search_inp" id="hxjy_navbar_search_inp" autocomplete="off" maxlength="100" />
+                <input name="" type="button" class="navbar_search_btn" />
+            </div>
+            <div class="navbar_menu_list"><a href="#">和讯首页</a></div>
+            <div class="navbar_person">
+                <a href="#">
+                    <img src="images/test1.gif" width="22" height="22" align="absmiddle" /></a> <a href="#">平安</a>
+            </div>
+            <div class="navbar_usr_info">
+                <span class="navbar_info_cur">
+                    <em class="navbar_write_blog"></em>
+                    <a href="#">写博客</a>
+                </span><span class="navbar_info_cur" id="hxjy_navbar_info_news">
+                    <a href="#">消息</a>
+                    <a href="#" class="navbar_info_num vhide"></a>
+                </span>
+                <span class="navbar_info_cur" id="hxjy_navbar_info_inform">
+                    <a href="#">通知</a>
+                    <a href="#" class="navbar_info_num vhide"></a>
+                    <ul class="dropdown-menu w121">
+                    </ul>
+                </span><span class="navbar_info_cur" id="hxjy_navbar_info_account">
+                    <a href="#">账号</a>
+                    <em class="navbar_account"></em>
+                    <ul class="dropdown-menu w51">
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">退出 </a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--/ Navbar -->
+    <div class="placeholder40"></div>
+    <div class="container">
+        <!-- header -->
+        <div class="profile_header_pic">
+            <img src="images/test3.gif" width="960" height="120" />
+            <a href="javasript:;" class="header_pic_btn" id="hxjy_bannerBtn"></a>
+        </div>
+        <!--/ header -->
+        <!-- 个人信息 -->
+        <div class="profile_info">
+            <div class="user-avatar">
+                <a href="#">
+                    <img src="images/test2.gif" width="120" height="120" /></a>
+            </div>
+            <div class="basic-info">
+                <h2 class="nickname fh"><a href="#" class="a666">MIKA9i_平安</a></h2>
+                <p>女     北京市朝阳区</p>
+                <p>简介： 恋爱第一年看的都是对方的优点，恋爱第二年看的都是对方的缺点，恋爱第三年看的对方的 </p>
+                <div class="user_atten"><a href="#"><strong>529</strong> 关注</a> <a href="#"><strong>11322</strong> 粉丝</a></div>
+            </div>
+            <div class="profile_do fyh"><a href="#" class="a_btn"><em class="icon_pencil"></em>写博客</a><a href="#" class="a_btn"> <em class="icon_up_pic"></em>上传照片</a><a href="#" class="a_btn"> <em class="icon_wb"></em>发微博</a></div>
+        </div>
+        <!--/ 个人信息 -->
+        <div class="subnav">
+            <!-- 关掉的导航 -->
+            <a href="#" class="show_btn" id="hxjy_subnav_show" title="展开导航"></a>
+            <!-- 关掉的导航 -->
+            <!-- 导航 -->
+            <div class="subnav_dipaly clearfix" id="hxjy_subnav_parel">
+                <div class="subnav_icon"><a href="#" class="nav_latest"></a><span class="nav_blog_cur"></span><a href="#" class="nav_wb"></a><a href="#" class="nav_photo"></a><a href="#" class="nav_wd"></a><a href="#" class="nav_email"></a></div>
+                <div class="subnav_right"><a class="set_btn" title="设置"></a><a class="close_btn" id="hxjy_subnav_close" title="关闭"></a></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!--/ 导航 -->
+        <!-- 公共部分 -->
+        <!-- 大标题 -->
+
+        <div class="wt_tit1 tit-color1 wt_add_topbd clearfix">
+            <h2 class="wt_tit1-l fl fh">设置中心</h2>
+        </div>
+        <div class="manage_box clearfix">
+            <!-- 管理后台左侧通用 -->
+            <div class="manage_left">
+                <ul>
+                    <li><a href="#">个人资料</a></li>
+                    <li><a href="#">修改头像</a></li>
+                    <li><a href="#">隐私设置</a></li>
+                    <li class="cur_li"><a href="#">账号安全</a></li>
+                    <li><a href="#">OpenId</a></li>
+                    <li><a href="#">个性域名</a></li>
+                </ul>
+            </div>
+            <!-- 管理后台右侧通用 -->
+            <div class="manage_right">
+                <!--setCenter s-->
+                <div class="sc-account pt20" id="tab">
+                    <ul class="sc-accountNav clearfix">
+                        <li><a href="#">安全中心</a><span></span></li>
+                        <li><a href="#">修改密码</a><span></span></li>
+                        <li class="sc-accountOn"><a href="#">绑定邮箱</a><span></span></li>
+                        <li><a href="#">绑定手机</a><span></span></li>
+                        <li class="sc-accounlistLast"><a href="#">安全提醒</a><span></span></li>
+                    </ul>
+                    <div class="sc-accountEmail">
+                        <p class="sc-accountSafewT color_b9">绑定手机后您可以通过手机号登录和讯网，并随时发布短信或彩信分享分辨的精彩。</p>
+                        <div class="clearfix pt20 pl40 inputFocus">
+                            <label class="fl sc-messLabel1">当前安全邮箱：</label>
+                            <div class="fl sc-messInputBox">36891314@163.com</div>
+                        </div>
+                        <div class="clearfix pt20 pl40">
+                            <label class="fl sc-messLabel1" for="hxjy-sc-account-emailnew">新 安全 邮 箱：</label>
+                            <div class="fl sc-messInputBox">
+                                <input type="text" class="sc-messInput1" id="hxjy-sc-account-emailnew"></div>
+                            <div class="fl rightWarning hide">
+                                <strong>
+                                    <img alt="" src="images/input_right.png">
+                                </strong>
+                            </div>
+                            <div class="fl errorWarning hide"><span class="fl errorWarningIco"></span>请输入正确的邮箱地址
+                            </div>
+                        </div>
+                        <div class="clearfix pt20 pl40">
+                            <label class="fl sc-messLabel1" for="hxjy-sc-account-emailnewPass">和讯登陆密码：</label>
+                            <div class="fl sc-messInputBox">
+                                <input type="password" class="sc-messInput1" id="hxjy-sc-account-emailnewPass"></div>
+                            <div class="fl rightWarning hide">
+                                <strong>
+                                    <img alt="" src="images/input_right.png">
+                                </strong>
+                            </div>
+                            <div class="fl errorWarning hide">
+                                <span class="fl errorWarningIco"></span>
+                                登陆密码错误
+                            </div>
+                        </div>
+                        <div class="clearfix sc-accountMobileBtn ml25 pt20">
+                            <a href="#" class="a_btn a_btn_large fh">绑定邮箱</a>
+                        </div>
+                    </div>
+                </div>
+                <!--setCenter e-->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container"><span><a href="http://www.hexun.com">返回和讯首页</a> </span>Copyright&copy;<strong>和讯网 和讯信息科技有限公司</strong> All Rights Reserved 版权所有 复制必究</div>
+    </div>
+    <script type="text/javascript" src="Scripts/hexun.home.common.js?123"></script>
+    <script type="text/javascript" src="Scripts/hexun.home.setup.js"></script>
+    <script type="text/javascript">
+        // 个人门户→固定导航条
+        hexun.home.navBar().init();
+
+        // 个人门户→导航条效果
+        hexun.home.banner().init();
+
+        // 个人门户→自定义导航条图片
+        hexun.home.bannerPic().init();
+
+        // 设置中心→账号安全
+        hexun.home.accountSafe().init();
+    </script>
+</body>
+</html>

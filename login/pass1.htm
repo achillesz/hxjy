@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	和讯－找回密码
+</title>
+<link rel="Stylesheet" type="text/css" href="http://reg.hexun.com/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/temp.css" media="all">
+<script type="text/javascript" language="javascript">
+    function butSubmit(action)
+    {
+        var objuserName = document.getElementById("userName");
+        var objform = document.getElementById("FomUserName");
+       
+            if(objuserName.value == "")
+            {
+                alert("用户名不能为空！");            
+                objuserName.focus();
+                return false;
+            }
+            if (document.getElementById("TextGpic").value == "")			
+	        {
+			   alert("未填写验证码！");
+			   document.getElementById("TextGpic").focus();				
+			   return false;						
+		    }
+            if(action == 1)
+            {
+                objform.action = "GetPsdIndex.aspx";
+            }
+            else
+            {
+                objform.action = "GetPasswordAnswer.aspx";
+            }
+        objform.submit();
+       // return true;
+       
+    }
+    </script>
+</head>
+
+<body>
+<form id="FomUserName" method="post" >
+
+<div class="warp">
+<!--页头 b-->
+<div class="header">
+<div class="box">
+
+<div class="bg">
+
+<div class="logo"><a href="http://www.hexun.com" target="_blank" title="和讯logo"><img src="http://reg.hexun.com/img/logo.png" /></a>登录</div>
+<span>中国最大的财经网站</span>
+</div>
+</div>
+<div class="right"></div>
+</div>
+<!--页头 e-->
+
+<!--内容 b-->
+<div class="content">
+<div class="title" style="padding-top:60px; margin-bottom:30px"><span><b>找回密码</b></span>
+<ul>
+
+<li>如有“疑问或者困难”，请联系<a href="http://hexun.com/hexuncom/default.html" target="_blank">管理员！</a></li>
+</ul>
+</div>
+<div class="mainBox">
+
+<div class="main lnr reg">
+    <div class="tab">
+    <ul class="tabList">
+        <li class="">通过手机找回</li>
+        <li class="tabListItem2 tabListItemNow">通过邮箱找回</li>
+    </ul>
+<div class="tabCon pt36">
+<div id="entry">
+<dl>
+<dt style="width:155px;">请输入您的用户名：</dt>
+
+<dd><input type="text" name="userName" value="" id="userName" class="inpsty1" />
+</dd>
+<dd class="point" id="UserName_div" ><span>您帐户的用户名，3-12个字符，第一位不 能是数字</span></dd>
+</dl>
+    <div class="subm" style="padding:6px 0 13px 155px;" ><img id="c_codeImg" style="position: relative; top: 8px;" alt="验证码" border="0">
+        <script language="javascript">
+            function refreshC_code()
+            {
+                var pp= Math.round((Math.random()) * 100000000);
+                document.getElementById("c_codeImg").src = "vcodepic.aspx?userid="+pp;
+            }
+            refreshC_code();
+        </script>
+        <a href="javascript:refreshC_code()" class="fz12a">看不清楚？换一个</a></div>
+<dl>
+<dt style="width:155px">验证码：</dt>
+<dd><input type="text" id="TextGpic" class="inp1"  size="8" name="TextGpic" /></dd>
+<dd class="point" id="Mail_div"></dd>
+</dl>
+
+</div>
+
+
+<div class="subm">
+<a href="#" style="background:url(img/btn_zh.gif) no-repeat;display:block;width:118px;height:42px;" onclick="return butSubmit(1);"></a>
+</div>
+</div>
+<div class="hide">
+    <p class="sendMess">
+        如果已经绑定手机，您可以发送短信：<strong style="color:#900;font-size:16px;">zhmm</strong> 到 <strong style="color:#5f5f5f;font-size:16px;">106901805</strong><br>
+        密码将以短信方式发送到您的手机上。
+    </p>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<!--内容 e-->
+
+</div>
+<!--页脚 b-->
+<div class="footer">
+copyright&copy;和讯网
+</div>
+<!--页脚 e-->                        
+</form>
+
+</body>
+</html>

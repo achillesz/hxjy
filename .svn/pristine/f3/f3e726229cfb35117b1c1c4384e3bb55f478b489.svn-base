@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>相册内容</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/jquery-1.7.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar fyh">
+        <div class="container">
+            <a href="#" class="navbar_logo">
+                <img src="images/logo.gif" width="73" height="40" /></a>
+            <div class="navbar_pro_name">个人门户<img src="images/blank.gif" class="navbar_pro_brand" /></div>
+            <div class="navbar_search">
+                <span class="navbar_search_inp_value">搜索用户</span>
+                <input name="" type="text" class="navbar_search_inp" id="hxjy_navbar_search_inp" />
+                <input name="" type="button" class="navbar_search_btn" />
+            </div>
+            <div class="navbar_menu_list"><a href="#">和讯首页</a></div>
+            <div class="navbar_person">
+                <a href="#">
+                    <img src="images/test1.gif" width="22" height="22" align="absmiddle" /></a> <a href="#">平安</a>
+            </div>
+            <div class="navbar_usr_info">
+                <span class="navbar_info_cur">
+                    <em class="navbar_write_blog"></em>
+                    <a href="#">写博客</a>
+                </span><span class="navbar_info_cur" id="hxjy_navbar_info_news">
+                    <a href="#">消息</a>
+                    <a href="#" class="navbar_info_num vhide"></a>
+                </span>
+                <span class="navbar_info_cur" id="hxjy_navbar_info_inform">
+                    <a href="#">通知</a>
+                    <a href="#" class="navbar_info_num vhide"></a>
+                    <ul class="dropdown-menu w121">
+                    </ul>
+                </span><span class="navbar_info_cur" id="hxjy_navbar_info_account">
+                    <a href="#">账号</a>
+                    <em class="navbar_account"></em>
+                    <ul class="dropdown-menu w51">
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">退出 </a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--/ Navbar -->
+    <div class="placeholder40"></div>
+    <div class="container">
+        <!-- header -->
+        <div class="profile_header_pic">
+            <img src="images/test3.gif" width="960" height="120" />
+            <a href="javasript:;" class="header_pic_btn" id="hxjy_bannerBtn"></a>
+        </div>
+        <!--/ header -->
+        <!-- 个人信息 -->
+        <div class="profile_info">
+            <div class="user-avatar">
+                <a href="#">
+                    <img src="images/test2.gif" width="120" height="120" /></a>
+            </div>
+            <div class="basic-info">
+                <h2 class="nickname fh"><a href="#" class="a666">MIKA9i_平安</a></h2>
+                <p>女     北京市朝阳区</p>
+                <p>简介： 恋爱第一年看的都是对方的优点，恋爱第二年看的都是对方的缺点，恋爱第三年看的对方的 </p>
+                <div class="user_atten"><a href="#"><strong>529</strong> 关注</a> <a href="#"><strong>11322</strong> 粉丝</a></div>
+            </div>
+            <div class="profile_do fyh"><a href="#" class="a_btn"><em class="icon_pencil"></em>写博客</a><a href="#" class="a_btn"> <em class="icon_up_pic"></em>上传照片</a><a href="#" class="a_btn"> <em class="icon_wb"></em>发微博</a></div>
+        </div>
+        <!--/ 个人信息 -->
+        <div class="subnav">
+            <!-- 关掉的导航 -->
+            <a href="#" class="show_btn" id="hxjy_subnav_show" title="展开导航"></a>
+            <!-- 关掉的导航 -->
+            <!-- 导航 -->
+            <div class="subnav_dipaly clearfix" id="hxjy_subnav_parel">
+                <div class="subnav_icon"><a href="#" class="nav_latest"></a><span class="nav_blog_cur"></span><a href="#" class="nav_wb"></a><a href="#" class="nav_photo"></a><a href="#" class="nav_wd"></a><a href="#" class="nav_email"></a></div>
+                <div class="subnav_right"><a class="set_btn" title="设置"></a><a class="close_btn" id="hxjy_subnav_close" title="关闭"></a></div>
+            </div>
+        </div>
+        <!--/ 导航 -->
+        <!-- 公共部分 -->
+        <!-- 大标题 -->
+        <div class="wt_tit1 tit-color1 wt_add_topbd clearfix">
+            <h2 class="wt_tit1-l fl fh">和讯博客</h2>
+            <div class="fl rewrite_btns1"><a class="a_btn" href="#"><em class="icon_up_pic"></em>上传照片</a></div>
+            <span class="wt_tit1-r fr"><a href="#" title="返回和讯相册频道">返回相册</a></span>
+        </div>
+        <!--albumup( s)-->
+        <div class="pl10 pt7 pb7 color_00"><a href="#">和讯相册</a><span class="ml10 mr10">/</span><a href="#">青海湖</a><span class="ml10 mr10">/</span><span class="mr10">照片详情</span></div>
+        <!--ablumcon(内容页 e)-->
+        <div class="slideCon">
+            <div class="slideArea">
+                <div class="slideTit clearfix">
+                    <h2 class="fl">俄罗斯4岁超模私房萌照</h2>
+                    <a href="#" class="fr mr10">返回该专辑图片列表 </a>
+                </div>
+                <div class="slideTips clearfix">
+                    <div class="slideTipsL fl pt13 pb13"><span class="mr30 ml10">上传于2012-10-8 14:40</span><span class="mr30">标签：<a href="#">财经、股票</a></span><span>支持方向键←和→浏览</span></div>
+                    <div class="slideTipsR fr pt10">
+                        <a href="#" class="fl slideTipsRa mr6"><em></em>管理照片</a>
+                        <a href="#" class="fl slideTipsRb mr15"><em></em>查看原图</a>
+                        <div class="fl slideTipsRc">
+                            <!-- 分享 -->
+                            <div class="shareBox" id="share"><span>分享这张图片</span><a name="和讯微博" href="javascript:void((function(s,d,e,t,z){var f='http://t.hexun.com/channel/shareweb.aspx?',u=z||d.location,p=['title=',e(t||d.title),'&amp;url=',e(u)].join('');function a(){if(!window.open([f,p].join(''),'wb'))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();})(screen,document,encodeURIComponent,'',''));" class="shxwb_btn"><img src="http://img.hexun.com/hd/2012/img/hx_logo.gif" alt="" /><div class="">转发到和讯微博</div></a><a class="ssina_btn" href="#" target=_blank id=sina><img src="http://img.hexun.com/hd/2012/img/sina_icon.gif" alt="" /><div>转发到新浪微博</div></a><a href="#" target=_blank id=sohu name="分享到搜狐微博" class="ssohu_btn"><img src="http://img.hexun.com/hd/2012/img/sh_icon.gif" alt="" /><div>转发到搜狐微博</div></a><a href="#" id=qq class="sdb_btn"  target=_blank><img src="http://img.hexun.com/hd/2012/img/qq_icon.gif" alt="" /><div>转发到腾讯微博</div></a><a href="javascript:;" id="btn_zfgd" class="btn_zfgd"><img src="http://img.hexun.com/hd/2012/img/gd_zf.gif" alt="" /></a>
+                                <div id="fxbtn" style="display: none;">
+                                    <a name="和讯微博" href="javascript:void((function(s,d,e,t,z){var f='http://t.hexun.com/channel/shareweb.aspx?',u=z||d.location,p=['title=',e(t||d.title),'&amp;url=',e(u)].join('');function a(){if(!window.open([f,p].join(''),'wb'))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else a();})(screen,document,encodeURIComponent,'',''));" class="shxwb_btna"><img src="http://img.hexun.com/hd/2012/img/hx.gif" alt="" /></a><a class="ssina_btna" href="#" target=_blank id="sinaa"><img src="http://img.hexun.com/hd/2012/img/sina.gif" alt="" /></a><a href="#" target=_blank id="sohua" name="分享到搜狐微博" class="ssohu_btna"><img src="http://img.hexun.com/hd/2012/img/sh.gif" alt="" /></a><a href="#" id="qqa" class="sdb_btna"  target=_blank><img src="http://img.hexun.com/hd/2012/img/qq.gif" alt="" /></a><a class="sqqz_btna" id=qqzone target=_blank href="#"><img src="http://img.hexun.com/hd/2012/img/qq_kj.gif" alt="" /></a><a href="#" target=_blank id=renren class="srr_btna"><img src="http://img.hexun.com/hd/2012/img/rr.gif" alt=""  /></a><a href="#" id=douban class="db_ztbtn"  target=_blank><img src="http://img.hexun.com/hd/2012/img/db.gif" alt="" /></a><a href="#" id="phone" class="phone_btn"  target=_blank><img src="http://img.hexun.com/hd/2012/img/sj.gif" alt="" /></a>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                var oBtn_zf=document.getElementById('btn_zfgd');
+                                var fxbtn=document.getElementById('fxbtn');
+                                oBtn_zf.onclick=function(ev){
+                                    var ev = ev || window.event;
+                                    ev.cancelBubble = true;
+                                    fxbtn.style.display='block';
+                                }
+                                document.onclick=function(){ fxbtn.style.display='none';}
+                                function shareHexunAll(){
+                                    var db=document.getElementById("douban");
+                                    if(db!=null){
+                                        db.href='http://www.douban.com/recommend/?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title);
+                                    }
+                                    var qq=document.getElementById("qq");
+                                    if(qq!=null){
+                                        qq.href='http://v.t.qq.com/share/share.php?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title);
+                                    }
+                                    var qqa=document.getElementById("qqa");
+                                    if(qqa!=null){
+                                        qqa.href='http://v.t.qq.com/share/share.php?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title);
+                                    }
+                                    var rr=document.getElementById("renren");
+                                    if(rr!=null){
+                                        rr.href='http://share.renren.com/share/buttonshare.do?link='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title);
+                                    }
+                                    var kx=document.getElementById("kaixin");
+                                    if(kx!=null){
+                                        kx.href='http://www.kaixin001.com/repaste/share.php?rtitle='+escape(document.title)+'&rurl='+encodeURIComponent(document.location.href)+'&rcontent=';
+                                    }
+                                    var sohu=document.getElementById("sohu");
+                                    if(sohu!=null){
+                                        sohu.href='http://t.sohu.com/third/post.jsp?&url='+escape(window.location.href)+'&title='+escape(document.title);
+                                    }
+                                    var sohua=document.getElementById("sohua");
+                                    if(sohua!=null){
+                                        sohua.href='http://t.sohu.com/third/post.jsp?&url='+escape(window.location.href)+'&title='+escape(document.title);
+                                    }
+                                    var sina=document.getElementById("sina");
+                                    if(sina!=null){
+                                        sina.href='http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark';
+                                    }
+                                    var sinaa=document.getElementById("sinaa");
+                                    if(sinaa!=null){
+                                        sinaa.href='http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark';
+                                    }
+                                    var qqzone = document.getElementById("qqzone");
+                                    if(qqzone!=null){
+                                        qqzone.href='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(location.href)+'&desc='+encodeURIComponent(document.title)+'';
+                                    }
+                                    var phone = document.getElementById("phone");
+                                    if(phone!=null){
+                                        phone.href='http://go.10086.cn/ishare.do?m=t&u='+encodeURIComponent(location.href)+'&t='+encodeURIComponent(document.title)+'&sid=6295c13d16170cd3930687d8156ed4a0';
+                                    }
+                                    var qq=document.getElementById("qq");
+                                    if(qq!=null){
+                                        qq.href='http://v.t.qq.com/share/share.php?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title);
+                                    }
+                                }
+                                shareHexunAll();
+                            </script>
+                            <!--分享 end-->
+                        </div>
+                    </div>
+                </div>
+                <div class="slidePic">
+                    <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td valign="middle" class="tc">
+                                <img src="images/temp0.jpg" alt=""></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="fanye">
+                    <a title="上一张" class="pic_pre" href="http://news.hexun.com/2012-11-05/147614788_2.html"></a>
+                    <a title="下一张" class="pic_next" href="http://news.hexun.com/2012-11-05/147614788_4.html"></a>
+                </div>
+                <div class="slideOther mt10 clearfix">
+                    <div class="fr">
+                        <span class="slideReadNums"><em></em>123123</span>
+                        <span class="slideComNums"><em></em>254</span>
+                        <a href="#" class="slidejubao">举报</a>
+                    </div>
+                </div>
+            </div>
+            <div class="controlBox">
+                <!-- 上一个图集 -->
+                <div class="preGroup group">
+                    <a class="out" href="http://news.hexun.com/2012-11-05/147614788.html">
+                        <img class="right" src="http://g3.hexunimg.cn/2012-11-05/147614789.jpg" />
+                    </a>
+                    <a class="txt" href="http://news.hexun.com/2012-11-05/147614788.html">上一个图集 </a>
+                </div>
+                <!-- 上一个图集 END -->
+                <!-- 小图区域 -->
+                <a id="hxjy_btnSmallBoxLeft" class="btnSmallBoxLeft" href="javascript:;"></a>
+                <div class="smallPicArea">
+                    <div id="hxjy_smallPicListBox" class="smallPicListBox">
+                        <ul id="hxjy_smallPicList">
+                            <li>
+                                <a href="http://news.hexun.com/2012-11-05/147614788_1.html">
+                                    <img src="http://g4.hexunimg.cn/2012-11-05/147614790_125x110.jpg" />
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="http://news.hexun.com/2012-11-05/147614788_2.html">
+                                    <img src="http://g3.hexunimg.cn/2012-11-05/147614791_125x110.jpg" />
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="http://news.hexun.com/2012-11-05/147614788_3.html">
+                                    <img src="http://g1.hexunimg.cn/2012-11-05/147614792_125x110.jpg" />
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="http://news.hexun.com/2012-11-05/147614788_4.html">
+                                    <img src="http://g2.hexunimg.cn/2012-11-05/147614793_125x110.jpg" />
+                                </a>
+                                <span></span>
+                            </li>
+                            <li class="selected">
+                                <a href="http://news.hexun.com/2012-11-05/147614788_5.html">
+                                    <img src="http://g1.hexunimg.cn/2012-11-05/147614794_125x110.jpg" />
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="http://news.hexun.com/2012-11-05/147614788_6.html">
+                                    <img src="http://g1.hexunimg.cn/2012-11-05/147614795_125x110.jpg" />
+                                </a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="http://news.hexun.com/2012-11-05/147614788_7.html">
+                                    <img src="http://g2.hexunimg.cn/2012-11-05/147614796_125x110.jpg" />
+                                </a>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="smlbox">
+                        <div id="hxjy_scrollBar" class="scrollBar">
+                            <div id="hxjy_ScroLine" class="ScroLine"></div>
+                        </div>
+                    </div>
+                </div>
+                <a id="hxjy_btnSmallBoxRight" class="btnSmallBoxRight" href="javascript:void(0)"></a>
+                <!-- 小图区域 END -->
+                <!-- 下一个图集 -->
+                <div class="nextGroup group">
+                    <a class="out1" href="http://news.hexun.com/2012-12-10/148873403.html">
+                        <img alt="picture" src="http://g2.hexunimg.cn/2012-12-10/148873404.jpg" />
+                    </a>
+                    <a class="txt" href="http://news.hexun.com/2012-12-10/148873403.html">下一个图集</a>
+                </div>
+                <div class="clear"></div>
+                <!-- 下一个图集 END -->
+            </div>
+        </div>
+        <!--albumcon e-->
+        <div class="albumCon clearfix">
+            <div class="albumConL fl">
+                <div class="wt_tit1 tit-color1 wt_add_topbd clearfix">
+                    <h2 class="wt_tit1-l fl fh">和讯博客</h2>
+                </div>
+                <div class="albumCon-Comment mt10 pl20">
+                    <div class="areaBox">
+                        <span class="areaBox_value">输入评论内容</span>
+                        <textarea class="areaBox_field" cols="30" rows="10" id="hxjy_album_commentArea" maxlength="200"></textarea>
+                    </div>
+                    <div class="clearfix mt10 pr">
+                        <a class="albumCon-CommBtn1 fl" title="插入表情" href="javascript:void(0)" id="hxjy_album_Smiley">
+                            <img src="images/zy_biaoqing.png" alt=""></a>
+                        <a href="#" class="add_btn_pink fr">评论</a>
+                        <div id="hxjy_album_SmileyPanel" class="smileyPanel hide">
+                            <a title="微笑 [:-)]" href="javascript:;">
+                                <img border="0" alt="微笑 [:-)]" src="http://comment.blog.hexun.com/img/emotions/01.gif" /></a>
+                            <a title="大笑 [:-D]" href="javascript:;">
+                                <img border="0" alt="大笑 [:-D]" src="http://comment.blog.hexun.com/img/emotions/02.gif" /></a>
+                            <a title="眨眼 [;-)]" href="javascript:;">
+                                <img border="0" alt="眨眼 [;-)]" src="http://comment.blog.hexun.com/img/emotions/03.gif" /></a>
+                            <a title="装酷 [8-)]" href="javascript:;">
+                                <img border="0" alt="装酷 [8-)]" src="http://comment.blog.hexun.com/img/emotions/04.gif" /></a>
+                            <a title="独眼龙 [(6)]" href="javascript:;">
+                                <img border="0" alt="独眼龙 [(6)]" src="http://comment.blog.hexun.com/img/emotions/05.gif" /></a>
+                            <a title="害羞 [:-$]" href="javascript:;">
+                                <img border="0" alt="害羞 [:-$]" src="http://comment.blog.hexun.com/img/emotions/06.gif" /></a>
+                            <a title="生气 [8o|]" href="javascript:;">
+                                <img border="0" alt="生气 [8o|]" src="http://comment.blog.hexun.com/img/emotions/07.gif" /></a>
+                            <a title="发呆 [:-(]" href="javascript:;">
+                                <img border="0" alt="发呆 [:-(]" src="http://comment.blog.hexun.com/img/emotions/08.gif" /></a>
+                            <a title="发怒 [:-@]" href="javascript:;">
+                                <img border="0" alt="发怒 [:-@]" src="http://comment.blog.hexun.com/img/emotions/09.gif" /></a>
+                            <a title="惊讶 [:-|]" href="javascript:;">
+                                <img border="0" alt="惊讶 [:-|]" src="http://comment.blog.hexun.com/img/emotions/10.gif" /></a>
+                            <a title="猫猫 [(&amp;)]" href="javascript:;">
+                                <img border="0" alt="猫猫 [(&amp;)]" src="http://comment.blog.hexun.com/img/emotions/11.gif" /></a>
+                            <a title="白眼 [&amp;-|]" href="javascript:;">
+                                <img border="0" alt="白眼 [&amp;-|]" src="http://comment.blog.hexun.com/img/emotions/12.gif" /></a>
+                            <a title="不说 [:-#]" href="javascript:;">
+                                <img border="0" alt="不说 [:-#]" src="http://comment.blog.hexun.com/img/emotions/13.gif" /></a>
+                            <a title="眼馋 [$-)]" href="javascript:;">
+                                <img border="0" alt="眼馋 [$-)]" src="http://comment.blog.hexun.com/img/emotions/14.gif" /></a>
+                            <a title="吐舌头 [:-P]" href="javascript:;">
+                                <img border="0" alt="吐舌头 [:-P]" src="http://comment.blog.hexun.com/img/emotions/15.gif" /></a>
+                            <a title="猫咪 [(@)]" href="javascript:;">
+                                <img border="0" alt="猫咪 [(@)]" src="http://comment.blog.hexun.com/img/emotions/16.gif" /></a>
+                            <a title="大哭 [:'(]" href="javascript:;">
+                                <img border="0" alt="大哭 [:'(]" src="http://comment.blog.hexun.com/img/emotions/17.gif" /></a>
+                            <a title="困了 [:-Z]" href="javascript:;">
+                                <img border="0" alt="困了 [:-Z]" src="http://comment.blog.hexun.com/img/emotions/19.gif" /></a>
+                            <a title="困惑 [:-S]" href="javascript:;">
+                                <img border="0" alt="困惑 [:-S]" src="http://comment.blog.hexun.com/img/emotions/20.gif" /></a>
+                            <a title="粽子 [(ZZ)]" href="javascript:;">
+                                <img border="0" alt="粽子 [(ZZ)]" src="http://comment.blog.hexun.com/img/emotions/zz.gif" /></a>
+                            <a title="悲伤 [*-(]" href="javascript:;">
+                                <img border="0" alt="悲伤 [*-(]" src="http://comment.blog.hexun.com/img/emotions/21.gif" /></a>
+                            <a title="狂吐 [:-%]" href="javascript:;">
+                                <img border="0" alt="狂吐 [:-%]" src="http://comment.blog.hexun.com/img/emotions/22.gif" /></a>
+                            <a title="伤心 [^-)]" href="javascript:;">
+                                <img border="0" alt="伤心 [^-)]" src="http://comment.blog.hexun.com/img/emotions/23.gif" /></a>
+                            <a title="汗 [:-*]" href="javascript:;">
+                                <img border="0" alt="汗 [:-*]" src="http://comment.blog.hexun.com/img/emotions/24.gif" /></a>
+                            <a title="花 [(R)]" href="javascript:;">
+                                <img border="0" alt="花 [(R)]" src="http://comment.blog.hexun.com/img/emotions/25.gif" /></a>
+                            <a title="花 [(W)]" href="javascript:;">
+                                <img border="0" alt="花 [(W)]" src="http://comment.blog.hexun.com/img/emotions/26.gif" /></a>
+                            <a title="太阳 [(%)]" href="javascript:;">
+                                <img border="0" alt="太阳 [(%)]" src="http://comment.blog.hexun.com/img/emotions/27.gif" /></a>
+                            <a title="月亮 [(S)]" href="javascript:;">
+                                <img border="0" alt="月亮 [(S)]" src="http://comment.blog.hexun.com/img/emotions/28.gif" /></a>
+                            <a title="星星 [(*)]" href="javascript:;">
+                                <img border="0" alt="星星 [(*)]" src="http://comment.blog.hexun.com/img/emotions/29.gif" /></a>
+                            <a title="邮件 [(M)]" href="javascript:;">
+                                <img border="0" alt="邮件 [(M)]" src="http://comment.blog.hexun.com/img/emotions/30.gif" /></a>
+                            <a title="足球 [(so)]" href="javascript:;">
+                                <img border="0" alt="足球 [(so)]" src="http://comment.blog.hexun.com/img/emotions/31.gif" /></a>
+                            <a title="亮亮 [(I)]" href="javascript:;">
+                                <img border="0" alt="亮亮 [(I)]" src="http://comment.blog.hexun.com/img/emotions/32.gif" /></a>
+                            <a title="咖啡 [(F)]" href="javascript:;">
+                                <img border="0" alt="咖啡 [(F)]" src="http://comment.blog.hexun.com/img/emotions/33.gif" /></a>
+                            <a title="心 [(L)]" href="javascript:;">
+                                <img border="0" alt="心 [(L)]" src="http://comment.blog.hexun.com/img/emotions/34.gif" /></a>
+                            <a title="心 [(U)]" href="javascript:;">
+                                <img border="0" alt="心 [(U)]" src="http://comment.blog.hexun.com/img/emotions/35.gif" /></a>
+                            <a title="便便 [(=)]" href="javascript:;">
+                                <img border="0" alt="便便 [(=)]" src="http://comment.blog.hexun.com/img/emotions/36.gif" /></a>
+                            <a title="电视 [(#)]" href="javascript:;">
+                                <img border="0" alt="电视 [(#)]" src="http://comment.blog.hexun.com/img/emotions/37.gif" /></a>
+                            <a title="时间 [(O)]" href="javascript:;">
+                                <img border="0" alt="时间 [(O)]" src="http://comment.blog.hexun.com/img/emotions/38.gif" /></a>
+                            <a title="酒 [(D)]" href="javascript:;">
+                                <img border="0" alt="酒 [(D)]" src="http://comment.blog.hexun.com/img/emotions/39.gif" /></a>
+                            <a title="电话 [(T)]" href="javascript:;">
+                                <img border="0" alt="电话 [(T)]" src="http://comment.blog.hexun.com/img/emotions/40.gif" /></a>
+                        </div>
+                    </div>
+                    <ul class="albumCon-CommList" id="hxjy_album_commList">
+                        <li class="clearfix">
+                            <div class="albumCon-cmI fl">
+                                <a href="#">
+                                    <img src="images/temp6.png" alt=""></a>
+                            </div>
+                            <div class="albumCon-cmText fl lh24">
+                                <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                            </div>
+                            <div class="albumCon-cmTime fr">
+                                <span class="color_b9">9月14日 14:20</span>
+                                <br />
+                                <a href="javascript:void(0);" class="album_reply">回复</a>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="albumCon-cmI fl">
+                                <a href="#">
+                                    <img src="images/temp6.png" alt=""></a>
+                            </div>
+                            <div class="albumCon-cmText fl lh24">
+                                <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                            </div>
+                            <div class="albumCon-cmTime fr">
+                                <span class="color_b9">9月14日 14:20</span>
+                                <br />
+                                <a href="javascript:void(0);" class="album_reply">回复</a>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="albumCon-cmI fl">
+                                <a href="#">
+                                    <img src="images/temp6.png" alt=""></a>
+                            </div>
+                            <div class="albumCon-cmText fl lh24">
+                                <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                            </div>
+                            <div class="albumCon-cmTime fr">
+                                <span class="color_b9">9月14日 14:20</span>
+                                <br />
+                                <a href="javascript:void(0);" class="album_reply">回复</a>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="albumCon-cmI fl">
+                                <a href="#">
+                                    <img src="images/temp6.png" alt=""></a>
+                            </div>
+                            <div class="albumCon-cmText fl lh24">
+                                <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                            </div>
+                            <div class="albumCon-cmTime fr">
+                                <span class="color_b9">9月14日 14:20</span>
+                                <br />
+                                <a href="javascript:void(0);" class="album_reply">回复</a>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="albumCon-cmI fl">
+                                <a href="#">
+                                    <img src="images/temp6.png" alt=""></a>
+                            </div>
+                            <div class="albumCon-cmText fl lh24">
+                                <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                            </div>
+                            <div class="albumCon-cmTime fr">
+                                <span class="color_b9">9月14日 14:20</span>
+                                <br />
+                                <a href="javascript:void(0);" class="album_reply">回复</a>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="albumCon-cmI fl">
+                                <a href="#">
+                                    <img src="images/temp6.png" alt=""></a>
+                            </div>
+                            <div class="albumCon-cmText fl lh24">
+                                <a href="#">至尊宝</a>发表了评论：<a class="stda2" href="#">你好你好你好</a><br>
+                                孙丹菲了的房间里的房间多浪费接待来访多浪费降到了的房间里东方。<a href="#"><span class="eng">&copy;</span>碎碎有平安</a>你觉得是吧？<span>（15分钟前）</span>
+                            </div>
+                            <div class="albumCon-cmTime fr">
+                                <span class="color_b9">9月14日 14:20</span>
+                                <br />
+                                <a href="javascript:void(0);" class="album_reply">回复</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mt25 pb20 clearfix">
+                        <div class="pagination" id="hxjy_page">
+                            <a href="javascript:;" class="page_btn_no">上一页</a><span class="cur_page"><a href="#">第&nbsp;1&nbsp;页&nbsp;</a><em></em><ul class="page_dropdown hide" style="display: none;">
+                                <li><a href="javascript:;" class="">第&nbsp;5&nbsp;页</a></li>
+                                <li><a href="javascript:;" class="">第&nbsp;4&nbsp;页</a></li>
+                                <li><a href="javascript:;" class="">第&nbsp;3&nbsp;页</a></li>
+                                <li><a href="javascript:;" class="">第&nbsp;2&nbsp;页</a></li>
+                                <li><a href="javascript:;" class="a_cur_page">第&nbsp;1&nbsp;页</a></li>
+                            </ul>
+                            </span><a href="javascript:;" class="page_btn">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="albumConR fr">
+                <div class="wt_tit1 tit-color1 wt_add_topbd clearfix">
+                    <h2 class="wt_tit1-l fl fh">和讯博客</h2>
+                    <a href="#" class="fr albumCon_More">更多</a>
+                </div>
+                <ul class="albumCon-phoList clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/temp7.png" alt=""></a>
+                        <p><a href="#">孙丹菲考虑到附近多浪费角度来看发多浪费降到了</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="hxjy_footer">
+        <div class="container"><span class="right"><a href="http://www.hexun.com">返回和讯首页</a> </span>Copyright<span style="font-family: Tahoma">&copy;</span><strong>和讯网 和讯信息科技有限公司</strong> All Rights Reserved 版权所有 复制必究</div>
+    </div>
+    <script type="text/javascript" src="Scripts/hexun.home.common.js?123"></script>
+    <script type="text/javascript" src="Scripts/hexun.home.album.js?123"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            // 个人门户→固定导航条
+            hexun.home.navBar().init();
+
+            // 个人门户→导航条效果
+            hexun.home.banner().init();
+
+            // 个人门户→自定义导航条图片
+            hexun.home.bannerPic().init();
+
+            // 和讯相册→图片展示
+            hexun.home.albumView().init();
+
+        });
+    </script>
+
+</body>
+</html>
